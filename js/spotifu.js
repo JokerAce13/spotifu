@@ -1,6 +1,17 @@
+function selectOption(option) {
+    let optionList = document.querySelectorAll('.menuItem');
+
+    for(var i=0; i<optionList.length; i++)
+    {
+        optionList[i].classList.remove('is-active');
+    }
+
+    option.parentNode.classList.add('is-active');
+}
+
+
 function playPlayList() {
     let albumSectionA = document.querySelector('#album-a-section');
-    let albumSectionB = document.querySelector('#album-b-section');
     let playListSection = document.querySelector('#playlist-section');
     let mainSection = document.querySelector('.layout-main');
     let albumDetailSection = document.querySelector('.albumDetail');
@@ -47,12 +58,10 @@ function playSong(song) {
 
 function focusSearch() {
     let iconSearch = document.querySelector('.filterSong').querySelector('.icon-search');
-    console.log(iconSearch);
     iconSearch.classList.add('c-white');
 }
 
 function blurSearch() {
     let iconSearch = document.querySelector('.filterSong').querySelector('.icon-search');
-    console.log(iconSearch);
     iconSearch.classList.remove('c-white');
 }
