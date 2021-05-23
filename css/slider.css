@@ -1,0 +1,42 @@
+.slider {
+    /* inline-size: 200px; */
+    block-size: .25rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: .5rem;
+}
+
+.slider:hover .slider-progress {
+    background-color: var(--primaryColor);
+}
+
+.slider:hover .slider-button {
+    display: block;
+}
+
+.slider-progress {
+    inline-size: 30%;
+    /* Hereda el alto de su padre */
+    block-size: inherit;
+    background-color: var(--white);
+    border-radius: inherit;
+    position: relative;
+}
+
+.slider-button {
+    /* se eliminan los atributos por defecto de los botones padding, margin y border */
+    padding: 0;
+    margin: 0;
+    border: 0;
+    inline-size: .5rem;
+    /* Para que dependa del tamaño del padre */
+    block-size: 200%;
+    background-color: var(--white);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    /* Mueve el boton 50% de el mismo */
+    transform: translate(-50%, -50%);
+    display: none;
+}

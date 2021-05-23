@@ -1,0 +1,39 @@
+/* .menuItem {
+
+} */
+
+.menuItem a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font: var(--button);
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    /* box-shadow: inset 4px 0 0 var(--primaryColor); */
+    block-size: 2.5rem;
+}
+
+.menuItem a:hover {
+    text-decoration: none;
+}
+
+/* .menuItem a i {
+    font-size: 1.5rem;
+} */
+
+.menuItem [class^='icon-'] {
+    font-size: 1.5rem;
+}
+
+.menuItem.is-active a {
+    box-shadow: inset 4px 0 0 var(--primaryColor);
+    color: var(--white);
+}
+
+.menuItem.is-active .icon-home::before {
+    content: "\e90a";
+}
+
+.menuItem.is-active .icon-search::before {
+    content: "\e914";
+}

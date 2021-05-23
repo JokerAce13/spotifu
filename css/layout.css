@@ -1,0 +1,44 @@
+:root{
+    --sidebarInlineSize: 15rem;
+    --minBlockSize: 37.5rem;
+    --minInlineSize: 48rem;
+    --playerSize: 5.5rem;
+}
+
+.layout {
+    min-inline-size: var(--minInlineSize);
+    /* min-block-size: var(--minBlockSize); */
+}
+
+.layout-block {
+    display: flex;
+}
+
+.layout-sidebar {
+    inline-size: var(--sidebarInlineSize);
+    block-size: calc(100vh - var(--playerSize));
+    min-block-size: var(--minBlockSize);
+    overflow: auto;
+    flex-shrink: 0;
+    background-color: var(--gray60);
+}
+
+.layout-main {
+    /* Alto del viewport de mi navegador, es decir, lo que estoy viendo 100vh es como 100% */
+    block-size: calc(100vh - var(--playerSize));
+    min-block-size: var(--minBlockSize);
+    overflow: auto;
+    flex: 1;
+}
+
+.layout-main.with-background {
+    /* background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(/images/album-anime-hits-original.png); */
+    background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(/images/album-shot-in-the-dark2.jpg);
+    background-size: cover;
+    background-repeat: round;
+}
+
+.layout-bottom {
+    flex: 1;
+    block-size: var(--playerSize);
+}

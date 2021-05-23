@@ -1,0 +1,26 @@
+.albumContainerA {
+    color: var(--white);
+    text-align: center;
+    margin-block-start: 5rem;
+    margin-block-end: 1rem;
+ }
+
+.albumContainerA-album {
+    font: var(--headline1);
+    margin: 0;
+}
+
+.albumContainerA-artist {
+    font: var(--baseFont);
+    margin: 0;
+}
+
+.albumA {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.albumA  button {
+    align-self: center;
+}

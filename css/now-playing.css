@@ -1,0 +1,47 @@
+.nowPlaying {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nowPlaying-cover img {
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    /* Siempre que se crea una imagen dentro de un div se genera un espacio fantasma,
+    en base al lineheigt de la font padre */
+    vertical-align: middle;
+}
+
+.nowPlaying-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nowPlaying-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.nowPlaying-description a {
+    text-decoration: none;
+}
+
+.nowPlaying-description a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.nowPlaying-description-song {
+    font: var(--baseFontBold);
+    color: var(--white);
+}
+
+.nowPlaying-description-artist {
+    font: var(--smallFont);
+    color: var(--gray10);
+}
+
+.nowPlaying-actions button:hover i {
+    color: var(--primaryColor) !important;
+}

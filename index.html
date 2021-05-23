@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Spotifu - Aprendiendo Maquetación Con Musica">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spotifu.lab/">
+    <meta property="og:image" content="/images/Thumbnail-Spotifu.jpgs">
+    <title>Spotifu</title>
+    <link id="estilos" rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="/icons/spotify.svg" type="image/x-icon">
+    <script src="/js/spotifu.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <section class="layout-block">
+            <div class="layout-sidebar">
+                <aside class="sidebar">
+                    <header class="logo">
+                        <a href="" aria-current="page">
+                            <img src="/images/spotifu-logo.png" class="logoImage" alt="Logo de Spotifu">
+                        </a>
+                    </header>
+                    <nav class="menu" aria-label="principal">
+                        <ul class="menu-list">
+                            <li class="menuItem is-active">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-home" aria-hidden="true"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-creditCard" aria-hidden="true"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <nav class="list" aria-labelledby="library-navigation">
+                        <h2 id="library-navigation" class="list-title">Tu Biblioteca</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Sandro</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Escuchado Recientemente</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">AC/DC</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="list" aria-labelledby="playlist-navigation">
+                        <h2 id="playlist-navigation" class="list-title">Playlists</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Lo mejor de lo mejor</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Naruto al 100% para programar como un ninja</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Para cantar en la ducha</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Ska-P</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Naruto openings</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Boku no pico</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">This is Pokémon</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Mas populares de la semana</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Mis pistas de shazam</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Audio Library</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Amor y otras</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Latin</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Para cantar</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Pokemon</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a class="link" href="#">Yui</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="layout-main">
+                <div class="page">
+                    <div class="sticky">
+                        <div class="page-block">
+                            <header class="header" aria-label="Barra superior y menu del usuario">
+                                <div class="navigation">
+                                    <button class="navigation-prev" disabled title="Retroceder"
+                                        aria-label="Retroceder en Lista de Playlist">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" title="Avanzar"
+                                        aria-label="Avanzar en Lista de Playlist">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <form class="search" role="search"
+                                    aria-label="Buscar por artistas, canciones o podcast">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input type="search" placeholder="Buscar por artistas, canciones o podcast">
+                                </form>
+                            </header>
+                        </div>
+                    </div>
+
+                    <main class="page-block">
+                        <section class="albumDetail d-none" aria-label="Detalle del Album">
+                            <section id="album-a-section" class="albumContainerA d-none">
+                                <div class="albumA">
+                                    <h2 class="albumContainerA-album">Power Up</h2>
+                                    <p class="albumContainerA-artist">AC/DC <br> 2,611,830 SEGUIDORES</p>
+                                    <button class="button" title="Reproducir canción" aria-label="Reproducir canción"
+                                        onclick="playAlbum()">
+                                        Reproducir
+                                    </button>
+                                </div>
+                            </section>
+                            <section id="album-b-section" class="albumContainerB d-none">
+                                <img class="albumContainerB-image" src="/images/album-shot-in-the-dark2.jpg"
+                                    alt="Cover Album" aria-label="Imagen del Album - Power Up">
+                                <div class="albumB">
+                                    <h2 class="albumContainerB-album">Power Up</h2>
+                                    <p class="albumContainerB-artist">AC/DC <br> 2,611,830 SEGUIDORES</p>
+                                    <button class="button" title="Reproducir canción" aria-label="Reproducir canción">
+                                        Reproducir
+                                    </button>
+                                </div>
+                            </section>
+                            <section class="songContainer">
+                                <form class="filterSong" role="search" aria-label="Filtrar por canción">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input type="search" placeholder="Filtrar" onfocus="focusSearch()"
+                                        onblur="blurSearch()">
+                                </form>
+
+                                <table class="songList">
+                                    <thead class="songList-header">
+                                        <tr>
+                                            <th>Titulo</th>
+                                            <th>Artista</th>
+                                            <th>Álbum</th>
+                                            <th><i class="icon-calendar" aria-hidden="true"></i></th>
+                                            <th><i class="icon-clock" aria-hidden="true"></i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="songList-song is-selected">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Realize"
+                                                    aria-label="Reproducir la canción - Realize"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Realize
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:37</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Rejection"
+                                                    aria-label="Reproducir la canción - Rejection"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Rejection
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>4:06</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Shot In The Dark"
+                                                    aria-label="Reproducir la canción - Shot In The Dark"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Shot In The Dark
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:05</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Through The Mists Of Time"
+                                                    aria-label="Reproducir la canción - Through The Mists Of Time"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Through The Mists Of Time
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:32</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Kick You When You're Down"
+                                                    aria-label="Reproducir la canción - Kick You When You're Down"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Kick You When You're Down
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:10</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Witch's Spell"
+                                                    aria-label="Reproducir la canción - Witch's Spell"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Witch's Spell
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:42</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Demon Fire"
+                                                    aria-label="Reproducir la canción - Demon Fire"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Demon Fire
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:30</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Wild Reputation"
+                                                    aria-label="Reproducir la canción - Wild Reputation"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Wild Reputation
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>2:54</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - No Man's Land"
+                                                    aria-label="Reproducir la canción - No Man's Land"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                No Man's Land
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:40</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Systems Down"
+                                                    aria-label="Reproducir la canción - Systems Down"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Systems Down
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:13</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Money Shot"
+                                                    aria-label="Reproducir la canción - Money Shot"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Money Shot
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:05</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Code Red"
+                                                    aria-label="Reproducir la canción - Code Red"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Code Red
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>3:31</td>
+                                        </tr>
+                                        <tr class="songList-song">
+                                            <td class="songList-actions">
+                                                <button class="buttonIcon is-black is-small"
+                                                    title="Reproducir la canción - Thunderstruck"
+                                                    aria-label="Reproducir la canción - Thunderstruck"
+                                                    onclick="playSong(this)">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="player-control" role="switch" aria-checked="false"
+                                                    aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                                    <i class="icon-heart" aria-hidden="true"></i>
+                                                </button>
+                                                Thunderstruck
+                                            </td>
+                                            <td>AC/DC</td>
+                                            <td>Power Up</td>
+                                            <td>2020-11-13</td>
+                                            <td>4:53</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </section>
+
+                        <section id="playlist-section" aria-label="Playlist Disponibles">
+                            <section class="playlistList" aria-labelledby="region1">
+                                <div class="playlistList-header">
+                                    <h2 id="region1" class="playlistList-title">Sandro</h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" disabled title="Retroceder"
+                                            aria-label="Retroceder en Lista de Playlist">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" title="Avanzar"
+                                            aria-label="Avanzar en Lista de Playlist">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro1.jpg"
+                                                alt="Cover de la Playlist de Sandro El Mas Grande">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Sandro El Mas Grande</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Sandro El Mas Grande"
+                                                    aria-label="Reproducir la Playlist - Sandro El Mas Grande"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro2.jpg" alt="Cover de la Playlist de Beat Latino">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Beat Latino</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Beat Latino"
+                                                    aria-label="Reproducir la Playlist - Beat Latino"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro3.jpg"
+                                                alt="Cover de la Playlist de Sandro Espectacular">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Sandro Espectacular</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Sandro Espectacular"
+                                                    aria-label="Reproducir la Playlist - Sandro Espectacular"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro4.jpg"
+                                                alt="Cover de la Playlist de La Magia de Sandro">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">La Magia de Sandro</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - La Magia de Sandro"
+                                                    aria-label="Reproducir la Playlist - La Magia de Sandro"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro5.jpg"
+                                                alt="Cover de la Playlist de Sandro Muchacho">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Sandro Muchacho</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Sandro Muchacho"
+                                                    aria-label="Reproducir la Playlist - Sandro Muchacho"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro6.jpg" alt="Cover de la Playlist de Sandro Clasico">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Sandro Clasico</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Sandro Clasico"
+                                                    aria-label="Reproducir la Playlist - Sandro Clasico"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro7.jpg"
+                                                alt="Cover de la Playlist de Sandro Megadiscografia">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Sandro Megadiscografia</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Sandro Megadiscografia"
+                                                    aria-label="Reproducir la Playlist - Sandro Megadiscografia"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro8.jpg"
+                                                alt="Cover de la Playlist de Mis 30 Mejores Canciones">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Mis 30 Mejores Canciones</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Mis 30 Mejores Canciones"
+                                                    aria-label="Reproducir la Playlist - Mis 30 Mejores Canciones"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro9.jpg" alt="Cover de la Playlist de Siempre Sandro">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Siempre Sandro</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Siempre Sandro"
+                                                    aria-label="Reproducir la Playlist - Siempre Sandro"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="playlistB">
+                                        <div class="playlistB-cover">
+                                            <img src="/images/sandro10.jpg"
+                                                alt="Cover de la Playlist de Quiero Llenarme de Ti">
+                                        </div>
+                                        <div class="playlistB-details">
+                                            <h3 class="playlistB-title">Quiero Llenarme de Ti</h3>
+                                            <div class="playlistB-button">
+                                                <button class="buttonIcon is-primaryColor"
+                                                    title="Reproducir la Playlist - Quiero Llenarme de Ti"
+                                                    aria-label="Reproducir la Playlist - Quiero Llenarme de Ti"
+                                                    onclick="playPlayList()">
+                                                    <i class="icon-play" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+
+                            <section class="playlistList" aria-labelledby="region2">
+                                <div class="playlistList-header">
+                                    <h2 id="region2" class="playlistList-title">Escuchado Recientemente</h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" disabled title="Retroceder"
+                                            aria-label="Retroceder en Lista de Playlist">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" title="Avanzar"
+                                            aria-label="Avanzar en Lista de Playlist">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc.jpg"
+                                                alt="Cover de la Playlist de Highway To Hell">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Highway To Hell"
+                                                title="Reproducir la Playlist - Highway To Hell"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Highway To Hell</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-iron-maiden.jpg"
+                                                alt="Cover de la Playlist de Piece Of Mind">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Piece Of Mind"
+                                                title="Reproducir la Playlist - Piece Of Mind" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Iron Maiden</h3>
+                                        <h4 class="playlistA-description">Piece Of Mind</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-metallica.jpg"
+                                                alt="Cover de la Playlist de Master of Puppets">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Master of Puppets"
+                                                title="Reproducir la Playlist - Master of Puppets"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Metallica</h3>
+                                        <h4 class="playlistA-description">Master of Puppets</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-accept.jpg"
+                                                alt="Cover de la Playlist de Teutonic Terror">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Teutonic Terror"
+                                                title="Reproducir la Playlist - Teutonic Terror"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Accept</h3>
+                                        <h4 class="playlistA-description">Teutonic Terror</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-twisted.jpg"
+                                                alt="Cover de la Playlist de Live At The Astoria">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Live At The Astoria"
+                                                title="Reproducir la Playlist - Live At The Astoria"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Twisted Sister</h3>
+                                        <h4 class="playlistA-description">Live At The Astoria</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-motley-crue.jpg"
+                                                alt="Cover de la Playlist de Girls Girls Girls">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Girls Girls Girls"
+                                                title="Reproducir la Playlist - Girls Girls Girls"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Mötley Crue</h3>
+                                        <h4 class="playlistA-description">Girls Girls Girls</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-guns.jpg"
+                                                alt="Cover de la Playlist de The Many Faces Of Guns And Roses">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - The Many Faces Of Guns And Roses"
+                                                title="Reproducir la Playlist - The Many Faces Of Guns And Roses"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Guns And Roses</h3>
+                                        <h4 class="playlistA-description">The Many Faces Of Guns And Roses</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-queen.jpg"
+                                                alt="Cover de la Playlist de Greatest Hits II">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Greatest Hits II"
+                                                title="Reproducir la Playlist - Greatest Hits II"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Queen</h3>
+                                        <h4 class="playlistA-description">Greatest Hits II</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-dio.jpg"
+                                                alt="Cover de la Playlist de The Collection">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - The Collection"
+                                                title="Reproducir la Playlist - The Collection"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Dio</h3>
+                                        <h4 class="playlistA-description">The Collection</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-ratt.jpg"
+                                                alt="Cover de la Playlist de Dancing Undercover">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Dancing Undercover"
+                                                title="Reproducir la Playlist - Dancing Undercover"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ratt</h3>
+                                        <h4 class="playlistA-description">Dancing Undercover</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-kiss.jpg" alt="Cover de la Playlist de Destroyer">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Destroyer"
+                                                title="Reproducir la Playlist - Destroyer" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Kiss</h3>
+                                        <h4 class="playlistA-description">Destroyer</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-quiet-riot.jpg"
+                                                alt="Cover de la Playlist de Metal Health">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Metal Health"
+                                                title="Reproducir la Playlist - Metal Health" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Quiet Riot</h3>
+                                        <h4 class="playlistA-description">Metal Health</h4>
+                                    </article>
+                                </div>
+                            </section>
+
+                            <section class="playlistList" aria-labelledby="region3">
+                                <div class="playlistList-header">
+                                    <h2 id="region3" class="playlistList-title">AC/DC</h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" disabled title="Retroceder"
+                                            aria-label="Retroceder en Lista de Playlist">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" title="Avanzar"
+                                            aria-label="Avanzar en Lista de Playlist">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc1.jpg" alt="Cover de la Playlist de Power Up">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Power Up"
+                                                title="Reproducir la Playlist - Power Up" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Power Up</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc2.jpg"
+                                                alt="Cover de la Playlist de The Razors Edge">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - The Razors Edge"
+                                                title="Reproducir la Playlist - The Razors Edge"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">The Razors Edge</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc3.jpg"
+                                                alt="Cover de la Playlist de Hells Bells">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Hells Bells"
+                                                title="Reproducir la Playlist - Hells Bells" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Hells Bells</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc4.jpg"
+                                                alt="Cover de la Playlist de Black In Black">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Black In Black"
+                                                title="Reproducir la Playlist - Black In Black"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Black In Black</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc5.jpg" alt="Cover de la Playlist de Black Ice">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Black Ice"
+                                                title="Reproducir la Playlist - Black Ice" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Black Ice</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc6.jpg"
+                                                alt="Cover de la Playlist de Ballbreaker">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Ballbreaker"
+                                                title="Reproducir la Playlist - Ballbreaker" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Ballbreaker</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc.jpg"
+                                                alt="Cover de la Playlist de Highway To Hell">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Highway To Hell"
+                                                title="Reproducir la Playlist - Highway To Hell"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Highway To Hell</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc7.jpg" alt="Cover de la Playlist de Jailbreak">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Jailbreak"
+                                                title="Reproducir la Playlist - Jailbreak" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Jailbreak</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc8.jpg"
+                                                alt="Cover de la Playlist de The Best Of AC/DC">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - The Best Of AC/DC"
+                                                title="Reproducir la Playlist - The Best Of AC/DC"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">The Best Of AC/DC</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc9.jpg"
+                                                alt="Cover de la Playlist de Let There Be Rock">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Let There Be Rock"
+                                                title="Reproducir la Playlist - Let There Be Rock"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">Let There Be Rock</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc10.jpg"
+                                                alt="Cover de la Playlist de AC/DC Live">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - AC/DC Live"
+                                                title="Reproducir la Playlist - AC/DC Live" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">AC/DC Live</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-acdc11.jpg"
+                                                alt="Cover de la Playlist de For Those About To Rock">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - For Those About To Rock"
+                                                title="Reproducir la Playlist - For Those About To Rock"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">AC/DC</h3>
+                                        <h4 class="playlistA-description">For Those About To Rock</h4>
+                                    </article>
+                                </div>
+                            </section>
+
+                            <section class="playlistList" aria-labelledby="region4">
+                                <div class="playlistList-header">
+                                    <h2 id="region4" class="playlistList-title">Ska-P</h2>
+                                    <div class="navigation">
+                                        <button class="navigation-prev" disabled title="Retroceder"
+                                            aria-label="Retroceder en Lista de Playlist">
+                                            <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="navigation-next" title="Avanzar"
+                                            aria-label="Avanzar en Lista de Playlist">
+                                            <i class="icon-arrowRight" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="playlistList-container">
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap5.jpg" alt="Cover de la Playlist de Game Over">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Game Over"
+                                                title="Reproducir la Playlist - Game Over" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Game Over</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap1.jpg"
+                                                alt="Cover de la Playlist de Incontrolable">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Incontrolable"
+                                                title="Reproducir la Playlist - Incontrolable" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Incontrolable</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap2.jpg" alt="Cover de la Playlist de Todo Ska-P">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Todo Ska-P"
+                                                title="Reproducir la Playlist - Todo Ska-P" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Todo Ska-P</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap3.jpg" alt="Cover de la Playlist de Ska-P">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Ska-P"
+                                                title="Reproducir la Playlist - Ska-P" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Ska-P</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap4.jpg"
+                                                alt="Cover de la Playlist de Live In Woodstock Festival">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Live In Woodstock Festival"
+                                                title="Reproducir la Playlist - Live In Woodstock Festival"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Live In Woodstock Festival</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap6.jpg"
+                                                alt="Cover de la Playlist de ¡¡Que Corra La Voz!!">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - ¡¡Que Corra La Voz!!"
+                                                title="Reproducir la Playlist - ¡¡Que Corra La Voz!!"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">¡¡Que Corra La Voz!!</h3>
+                                        <h4 class="playlistA-description">¡¡Que Corra La Voz!!</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap7.jpg"
+                                                alt="Cover de la Playlist de Lagrimas y Gozos">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Lagrimas y Gozos"
+                                                title="Reproducir la Playlist - Lagrimas y Gozos"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Lagrimas y Gozos</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap8.jpg"
+                                                alt="Cover de la Playlist de El Vals del Obrero">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - El Vals del Obrero"
+                                                title="Reproducir la Playlist - El Vals del Obrero"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">El Vals del Obrero</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap9.jpg" alt="Cover de la Playlist de 99%">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - 99%"
+                                                title="Reproducir la Playlist - 99%" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">99%</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap10.jpg"
+                                                alt="Cover de la Playlist de Planeta Escoria">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Planeta Escoria"
+                                                title="Reproducir la Playlist - Planeta Escoria"
+                                                onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Planeta Escoria</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap11.jpg" alt="Cover de la Playlist de Eurosis">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Eurosis"
+                                                title="Reproducir la Playlist - Eurosis" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Eurosis</h4>
+                                    </article>
+                                    <article class="playlistA">
+                                        <div class="playlistA-cover">
+                                            <img src="/images/cover-skap12.jpg" alt="Cover de la Playlist de Empezando">
+                                            <button class="buttonIcon is-primaryColor"
+                                                aria-label="Reproducir la Playlist - Empezando"
+                                                title="Reproducir la Playlist - Empezando" onclick="playPlayList()">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <h3 class="playlistA-title">Ska-P</h3>
+                                        <h4 class="playlistA-description">Empezando</h4>
+                                    </article>
+                                </div>
+                            </section>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </section>
+
+        <section class="layout-block">
+            <footer class="layout-bottom">
+                <section class="player">
+                    <div class="player-nowPlaying">
+                        <div class="nowPlaying">
+                            <div class="nowPlaying-cover">
+                                <img src="/images/cover-acdc1.jpg" alt="Portada de Grand Escape (feat. Tokio Miura)"
+                                    title="Portada de Grand Escape (feat. Tokio Miura)">
+                            </div>
+                            <div class="nowPlaying-details">
+                                <div class="nowPlaying-description">
+                                    <a href="#" class="nowPlaying-description-song">Shot In The Dark</a>
+                                    <a href="#" class="nowPlaying-description-artist">AC/DC</a>
+                                </div>
+                                <div class="nowPlaying-actions">
+                                    <button class="player-control" role="switch" aria-checked="false"
+                                        aria-label="Me gusta" title="Me gusta" onclick="giveLike(this)">
+                                        <i class="icon-heart" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-playerControl">
+                        <div class="playerControl">
+                            <div class="playerControl-buttons" aria-label="Control de reproducción">
+                                <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+                                    <i class="icon-prev" aria-hidden="true"></i>
+                                </button>
+                                <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                                    <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+                                    <i class="icon-next" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="playerPlayBack">
+                                <span class="playerPlayBack-progressTime">01:12</span>
+                                <div class="playerPlayBack-slider">
+                                    <div class="slider">
+                                        <div id="progress-play-song" class="slider-progress is-initial">
+                                            <button class="slider-button"
+                                                aria-label="Control de la barra de progreso de la reproducción"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="playerPlayBack-progressTime">03:50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="player-playerVolume">
+                        <div class="playerVolume">
+                            <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
+                                <i id="volume-icon" class="icon-volumeUp" role="presentation"
+                                    aria-label="Volumen Alto"></i>
+                            </button>
+                            <div class="playerVolume-slider">
+                                <div class="slider">
+                                    <div class="slider-progress">
+                                        <button class="slider-button"
+                                            aria-label="Control de la barra de progreso de la reproducción"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.search {
+    position: relative;
+    flex: 1;
+}
+
+.search input {
+    font-size: var(--baseFont);
+    color: var(--gray30);
+    border-radius: 1.25rem;
+    border: 0;
+    max-inline-size: 22rem;
+    /* Porque los input tienen unos tamaños intrinsecos */
+    width: 100%;
+    padding: .5rem;
+    padding-inline-start: 2rem;
+}
+
+.search input::placeholder {
+    color: var(--gray10);
+}
+
+.search input:focus-within {
+    color: var(--gray30);
+}
+
+.search i {
+    position: absolute;
+    font-size: 1rem;;
+    top: calc(50% - .5em );
+    left: .5rem;
+    block-size: 1rem;
+}

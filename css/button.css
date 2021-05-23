@@ -1,0 +1,19 @@
+.button {
+    background: var(--primaryColor);
+    border-radius: 4.375rem;
+    color: var(--white);
+    /* inline-size: 5.5rem; */
+    /* block-size: 1rem; */
+    font: var(--baseFont);
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    padding-block-start: .5rem;
+    padding-block-end: .5rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(.95);
+}

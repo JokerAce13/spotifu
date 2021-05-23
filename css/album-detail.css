@@ -1,0 +1,7 @@
+@import './album-a-component.css';
+@import './album-b-component.css';
+
+.albumDetail {
+    display: flex;
+    flex-direction: column;
+}

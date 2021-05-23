@@ -1,0 +1,64 @@
+.filterSong {
+    position: relative;
+    /* flex: 1; */
+}
+
+.filterSong input {
+    font: var(--baseFont);
+    color: var(--gray30);
+    /* border-radius: 1.25rem; */
+    border: 0;
+    max-inline-size: 22rem;
+    /* Porque los input tienen unos tamaños intrinsecos */
+    width: 100%;
+    padding: .5rem;
+    padding-inline-start: 2rem;
+    /* background-color: var(--gray20); */
+    background-color: transparent;
+    color: var(--white);
+}
+
+.filterSong input::placeholder {
+    color: var(--gray10);
+    font: var(--buttonFont);
+}
+
+.filterSong input:focus-within {
+    color: var(--white);
+    background-color: var(--gray20);
+}
+
+.filterSong input:focus-within::placeholder {
+    color: var(--white);
+    font: var(--baseFont);
+}
+
+.filterSong input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+
+.filterSong input:focus-within::-webkit-search-cancel-button {
+    position:relative;
+    right: .25rem;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-image: url(/icons/close.svg);
+    background-size: cover;
+    font: var(--smallFont);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.filterSong i {
+    position: absolute;
+    font-size: 1rem;;
+    top: calc(50% - .6em );
+    left: .5rem;
+    block-size: 1rem;
+    /* color: var(--white); */
+    color: var(--gray10);
+    font: var(--buttonFont);
+
+}

@@ -1,0 +1,120 @@
+/* Selectores de atributo */
+/* [class^='icon-'], [class*=' icon-'] {
+    inline-size: 50px;
+    block-size: 50px;
+    background-size: cover;
+    display: inline-block;
+}
+
+.icon-home {
+    background-image: url(../icons/home.svg);
+} */
+
+/* Convertir iconos en fuente utilizando https://icomoon.io/
+1. Abrir el set en la aplicación
+2. Editar cada icono y quitar el fondo (Definir como transparente)
+3. Generar como fuente
+4. Copiar las fuentes al proyecto y el css
+5. Reemplazar las rutas de las fonts predefinidas por las rutas del proyecto
+6. Importar el css en el archivo de estilos principal del proyecto
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7lsrqh');
+    src:  url('../fonts/icomoon.eot?7lsrqh#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?7lsrqh') format('truetype'),
+      url('../fonts/icomoon.woff?7lsrqh') format('woff'),
+      url('../fonts/icomoon.svg?7lsrqh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-addPlus:before {
+    content: "\e900";
+  }
+  .icon-arrowLeft:before {
+    content: "\e901";
+  }
+  .icon-arrowRight:before {
+    content: "\e902";
+  }
+  .icon-calendar:before {
+    content: "\e903";
+  }
+  .icon-clock:before {
+    content: "\e904";
+  }
+  .icon-close:before {
+    content: "\e905";
+  }
+  .icon-creditCard:before {
+    content: "\e906";
+  }
+  .icon-download:before {
+    content: "\e907";
+  }
+  .icon-heart:before {
+    content: "\e908";
+  }
+  .icon-home:before {
+    content: "\e909";
+  }
+  .icon-homeActive:before {
+    content: "\e90a";
+  }
+  .icon-library:before {
+    content: "\e90b";
+  }
+  .icon-libraryActive:before {
+    content: "\e90c";
+  }
+  .icon-music:before {
+    content: "\e90d";
+  }
+  .icon-next:before {
+    content: "\e90e";
+  }
+  .icon-pause:before {
+    content: "\e90f";
+  }
+  .icon-play:before {
+    content: "\e910";
+  }
+  .icon-prev:before {
+    content: "\e911";
+  }
+  .icon-round:before {
+    content: "\e912";
+  }
+  .icon-search:before {
+    content: "\e913";
+  }
+  .icon-searchActive:before {
+    content: "\e914";
+  }
+  .icon-volumeDown:before {
+    content: "\e915";
+  }
+  .icon-volumeOff:before {
+    content: "\e916";
+  }
+  .icon-volumeUp:before {
+    content: "\e917";
+  }

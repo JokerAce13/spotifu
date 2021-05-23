@@ -1,0 +1,65 @@
+@import './icons.css';
+@import './fonts.css';
+@import './body.css';
+@import './link.css';
+@import './button-icon.css';
+@import './sidebar.css';
+@import './ellipsis.css';
+@import './player.css';
+@import './page.css';
+@import './layout.css';
+@import './scrollbar.css';
+@import './button.css';
+@import './songs-component.css';
+@import './album-detail.css';
+
+/* Variables Globales */
+:root {
+    font-size: 14px;
+    --primaryColor: #00B050;
+    --white: white;
+    --gray10: #B3B3B3;
+    --gray20: #737373;
+    --gray30: #282828;
+    --gray40: #181818;
+    --gray50: #121212;
+    --gray60: black;
+    --baseFontFamily: Avenir, Helvetica, sans-serif;
+    /* Se utiliza medidas relativas (rem) que trabajan en base 16, todo se debe dividir entre 16 */
+    --headline1: bold 2rem / normal var(--baseFontFamily);
+    --headline2: bold 1.5rem / 1.75rem var(--baseFontFamily);
+    --subtitle: normal .75rem / 1rem var(--baseFontFamily);
+    --baseFont: normal .875rem / 1.375rem var(--baseFontFamily);
+    --baseFontBold: bold .875rem / 1.375rem var(--baseFontFamily);
+    --buttonFont: bold .875rem / 1rem var(--baseFontFamily);
+    /* Al utilizar em es para definir que el tamaño depende del tamaño del padre */
+    --smallFont: normal .75em / normal var(--baseFontFamily);
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.giveLikeIt {
+    color: var(--primaryColor);
+}
+
+.c-white {
+    color: var(--white) !important;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    :root {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,15 @@
+@import './logo.css';
+@import './list.css';
+@import './menu.css';
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--gray60);
+    /* EL componente no debe especificar el tamaño, eso lo define el componente principal */
+    inline-size: 15rem;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
+    flex: 1;
+}

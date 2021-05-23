@@ -1,0 +1,46 @@
+.buttonIcon {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--gray10);
+}
+
+.buttonIcon.is-white {
+    background-color: var(--white);
+    color: var(--gray50);
+}
+
+.buttonIcon.is-primaryColor {
+    background-color: var(--primaryColor);
+    color: var(--white);
+}
+
+.buttonIcon.is-black{
+    color: var(--white);
+    background-color: var(--gray60);
+    border: 0.428571px solid var(--white);
+    box-sizing: border-box;
+}
+
+.buttonIcon.is-small{
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    font: var(--smallFont);
+}
+
+.buttonIcon .icon-play {
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+.buttonIcon:hover:is([class*=' is-']) {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.buttonIcon:active {
+    transform: scale(.95);
+}

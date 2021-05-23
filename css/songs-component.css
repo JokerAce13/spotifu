@@ -1,0 +1,9 @@
+@import './filter-song.css';
+@import './song-list.css';
+
+.songContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block-start: 1rem;
+}

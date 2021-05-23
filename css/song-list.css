@@ -1,0 +1,29 @@
+.songList-header {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.songList-header th:first-child {
+    padding-inline-start: 4.8rem;
+}
+
+.songList-header th {
+    padding-block-start: 14px;
+    padding-block-end: 14px;
+    font: var(--baseFont);
+}
+
+.songList-actions {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    justify-content: flex-start;
+}
+
+.songList-song td:nth-child(4){
+    inline-size: 5.625rem;
+}
+
+.songList-song.is-selected td {
+    color: var(--white);
+}
