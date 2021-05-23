@@ -21,12 +21,6 @@
     margin: 0;
 }
 
-/* .playlistList-buttons {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-} */
-
 .playlistList-container {
     display: flex;
     overflow-x: auto;

@@ -7,7 +7,6 @@
 
 .layout {
     min-inline-size: var(--minInlineSize);
-    /* min-block-size: var(--minBlockSize); */
 }
 
 .layout-block {

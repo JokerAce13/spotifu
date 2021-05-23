@@ -1,7 +1,3 @@
-/* .menuItem {
-
-} */
-
 .menuItem a {
     display: flex;
     align-items: center;
@@ -9,17 +5,12 @@
     font: var(--button);
     padding-inline-start: 1.5rem;
     padding-inline-end: 1.5rem;
-    /* box-shadow: inset 4px 0 0 var(--primaryColor); */
     block-size: 2.5rem;
 }
 
 .menuItem a:hover {
     text-decoration: none;
 }
-
-/* .menuItem a i {
-    font-size: 1.5rem;
-} */
 
 .menuItem [class^='icon-'] {
     font-size: 1.5rem;
