@@ -32,8 +32,7 @@
 }
 
 .layout-main.with-background {
-    /* background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(/images/album-anime-hits-original.png); */
-    background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(/images/album-shot-in-the-dark2.jpg);
+    background: linear-gradient(181.17deg, rgba(47, 47, 47, 0) -35.3%, #171717 66.2%), url(../images/album-shot-in-the-dark2.jpg);
     background-size: cover;
     background-repeat: round;
 }

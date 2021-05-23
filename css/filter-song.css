@@ -1,19 +1,16 @@
 .filterSong {
     position: relative;
-    /* flex: 1; */
 }
 
 .filterSong input {
     font: var(--baseFont);
     color: var(--gray30);
-    /* border-radius: 1.25rem; */
     border: 0;
     max-inline-size: 22rem;
     /* Porque los input tienen unos tamaños intrinsecos */
     width: 100%;
     padding: .5rem;
     padding-inline-start: 2rem;
-    /* background-color: var(--gray20); */
     background-color: transparent;
     color: var(--white);
 }
@@ -57,7 +54,6 @@
     top: calc(50% - .6em );
     left: .5rem;
     block-size: 1rem;
-    /* color: var(--white); */
     color: var(--gray10);
     font: var(--buttonFont);
 
