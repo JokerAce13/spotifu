@@ -44,7 +44,7 @@
     -webkit-appearance: none;
     height: 15px;
     width: 15px;
-    background-image: url(/icons/close.svg);
+    background-image: url(../icons/close.svg);
     background-size: cover;
     font: var(--smallFont);
     color: var(--white);
